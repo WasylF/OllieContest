@@ -6,7 +6,6 @@
     </filter>
     <filter-mapping>
         <filter-name>LoggedInFilter</filter-name>
-        <servlet-name>com.iteazer.servlets.CalibrateOllieServlet</servlet-name>
         <url-pattern>/doCommands.jsp</url-pattern>
         <url-pattern>/doCommandsFinal.jsp</url-pattern>
         <url-pattern>/performCommands.jsp</url-pattern>

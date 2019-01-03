@@ -34,7 +34,7 @@ public class Team implements Serializable {
 
     static void readTeams(String inputFileName) {
         try {
-            String projectFolder = "/home/vfranchu/Projects/OllieCompetition";
+            String projectFolder = "/home/wsl_f/Projects/OllieContest/OllieCompetition";
                     //PathHelper.getProjectHomeFolder();
             Path filePath = Paths.get(projectFolder + '/' + inputFileName);
             if (Files.exists(filePath)) {
