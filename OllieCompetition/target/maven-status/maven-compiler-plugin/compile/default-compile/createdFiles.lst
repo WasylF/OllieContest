@@ -1,0 +1,17 @@
+com/iteazer/logic/TeamResult.class
+com/iteazer/servlets/AdminFilter.class
+com/iteazer/servlets/FinalSubmissionFilter.class
+com/iteazer/logic/OllieManager.class
+com/iteazer/logic/Results.class
+com/iteazer/servlets/FinalSubmissionServlet.class
+com/iteazer/servlets/DeserializedResultsServlet.class
+com/iteazer/logic/Contest.class
+com/iteazer/servlets/SetSbmStatusServlet.class
+com/iteazer/logic/PathHelper.class
+com/iteazer/servlets/LoggedInFilter.class
+com/iteazer/servlets/CalibrateOllieServlet.class
+com/iteazer/logic/RoundResult.class
+com/iteazer/logic/Team.class
+com/iteazer/servlets/UpdSolutionStatusServlet.class
+com/iteazer/logic/Constants.class
+com/iteazer/servlets/LoginServlet.class
