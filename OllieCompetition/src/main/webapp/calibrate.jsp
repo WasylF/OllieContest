@@ -22,7 +22,7 @@
         <h2><a href="profile.jsp"> Your profile </a></h2>
         
         <form name="calibrateForm" action="${pageContext.request.contextPath}/CalibrateOllieServlet" method="POST">
-            <input type="text" name="textShift" value=<%=team.getCurrentShift()%> size="3" />
+            <input type="text" name="textShift" value=<%=0%> size="3" />
             <input type="submit" value="update" name="Update" />
         </form>
     </body>

@@ -16,9 +16,10 @@ import static com.iteazer.logic.Constants.PROJECT_CAPTION;
 public class PathHelper {
 
     public static String getProjectHomeFolder() {
-        String path = Team.class.getResource("").getPath();
-        int index = path.lastIndexOf(PROJECT_CAPTION);
-        return path.substring(0, index + PROJECT_CAPTION.length());
+//        String path = Team.class.getResource("").getPath();
+//        int index = path.lastIndexOf(PROJECT_CAPTION);
+//        return path.substring(0, index + PROJECT_CAPTION.length());
+        return "/home/wsl_f/Contest/";
     }
 
     /**

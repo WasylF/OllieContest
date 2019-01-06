@@ -38,9 +38,9 @@ public class Constants {
             = new HashSet<>(Arrays.asList('N', 'S', 'E', 'W'));
 
     public static final String CONNECTED_RESPOND = "connected";
-    public static final int WAIT_ON_CALIBRATION = 500;
-    public static final int ROLL_ON_CALIBRATION = 5_000;
-    public static final int SPEED_ON_CALIBRATION = 30;
+    public static final int WAIT_ON_CALIBRATION = 200;
+    public static final int ROLL_ON_CALIBRATION = 3_000;
+    public static final int SPEED_ON_CALIBRATION = 40;
 
     public static final String PROJECT_CAPTION = "OllieCompetition";
     

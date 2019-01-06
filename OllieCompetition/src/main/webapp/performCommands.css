@@ -22,15 +22,15 @@ table {
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+.column1 {
     float: left;
-    width: 31%;
+    width: 25%;
     padding: 10px;
 }
 
 .column2 {
     float: left;
-    width: 48%;
+    width: 70%;
     padding: 10px;
 }
 

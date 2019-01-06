@@ -34,8 +34,7 @@ public class Team implements Serializable {
 
     static void readTeams(String inputFileName) {
         try {
-            String projectFolder = "/home/wsl_f/Projects/OllieContest/OllieCompetition";
-                    //PathHelper.getProjectHomeFolder();
+            String projectFolder = PathHelper.getProjectHomeFolder();
             Path filePath = Paths.get(projectFolder + '/' + inputFileName);
             if (Files.exists(filePath)) {
                 Files.lines(filePath).forEach(s -> new Team(s));
@@ -119,16 +118,16 @@ public class Team implements Serializable {
             newShift = OLLIE_MIN_HEADING;
         }
 
-        OllieManager.setShift(droidMAC, newShift);
+        OllieManager.setShift(droidMAC, OllieManager.getShift(droidMAC) + newShift);
 
         OllieManager.connectToOllie(serverAddress, droidMAC);
 
         rollStopOnCalibrationOllie(0);
         rollStopOnCalibrationOllie(180);
 
-        OllieManager.rollOllie(serverAddress, droidMAC, 0, newShift);
+        OllieManager.rollOllie(serverAddress, droidMAC, 0, 0);
         OllieManager.wait(WAIT_ON_CALIBRATION);
-        OllieManager.rollOllie(serverAddress, droidMAC, 0, newShift);
+        OllieManager.rollOllie(serverAddress, droidMAC, 0, 0);
     }
 
     public int getCurrentShift() {
